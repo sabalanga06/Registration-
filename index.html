@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <h2>LGM Task-3</h2>
+        <h2>Registration From</h2>
+        <div class="form-wrapper">
+            <form class="myForm">
+                <!-- <div class="formit">
+                    <label for="Image">Image:</label>
+                    <input type="file"  id="Image" placeholder="upload your Image" accept="image/png, image/jpg" required>
+                </div> -->
+                <div class="formit">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text"  id="fullname" placeholder="Full Name" required>
+                </div>
+                <div class="formit">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="email" id="email" placeholder="email@xyz.com" required>
+                </div>
+                <div class="formit">
+                    <label for="website">Website:</label>
+                    <input type="website" name="website" id="website" placeholder="www.xyz.com/in/org..." required>
+                </div>
+
+                <div class="formit">
+                    <label for="phonenumber">Phone/Mobile No.:</label>
+                    <input type="tel" name="phonenumber" id="phonenumber" placeholder="XXX XXX XXXX" required>
+                </div>
+                
+                <div class="formit">
+                    <label for="gender">Gender:</label>
+                    <div class="genders">
+                        <p>Male</p> <input type="radio" name="gender" id="gender" value="male">
+                        <p>Female</p> <input type="radio" name="gender" id="gender" value="female">
+                        <p>Other</p> <input type="radio" name="gender" id="gender" value="other">
+                    </div>
+                </div>
+                <div class="formit">
+                    <label for="skills">Skills:</label>
+                    <div class="skills">
+                        <p>HTML</p> <input type="checkbox" name="skill" id="skill" value="HTML">
+                        <p>CSS</p> <input type="checkbox" name="skill" id="skill" value="CSS"> <br>
+                        <p>JS</p> <input type="checkbox" name="skill" id="skill" value="JS">
+                        <p>JAVA</p> <input type="checkbox" name="skill" id="skill" value="JAVA">
+                        <p>C++</p> <input type="checkbox" name="skill" id="skill" value="C++">
+                        <p>PHP</p> <input type="checkbox" name="skill" id="skill" value="PHP">
+                    </div>
+                </div>               
+
+                <button class="register" id="submit" onclick="onFormSubmit()" type="submit">Enroll</button>
+                <button class="clear" id="clear" onclick="resetForm()">Cancel</button>
+            </form>
+        </div>
+
+    </div>
+    <h2 align="center">Registered Users</h2>
+<div class="table-wrapper">
+    <table class="show">
+        <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Website</th>
+            <th>Mobile Number</th>
+            <th>Gender</th>
+            <th>Skills</th>
+        </tr>
+        </thead>
+        <tbody>
+        
+        <tbody>
+    </table>
+</div>
+<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
